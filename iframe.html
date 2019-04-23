@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+     <style type="text/css">
+        .column-layout{
+          display: flex;
+        }
+        #side1{
+            flex:1;
+            order:1;
+            padding:10px;
+        }
+        #side2{
+            flex:1;
+            order:3;
+            padding:10px;
+        }
+        #main{
+            padding:10px;
+            order:2;
+            flex: 3;
+        }
+        .call-out-container{
+          max-width: 1400px;
+          margin:40px auto 0 auto;
+          display:flex;
+        }
+        .call-out{
+          padding:20px;
+          margin-bottom:20px;
+          margin:10px;
+          flex:1;
+
+        }
+        .call-out:nth-child(1){
+          background-color: red;
+        }
+        .call-out:nth-child(2){
+          background-color: green;
+        }
+        .call-out:nth-child(3){
+          background-color: yellow;
+        }
+      @media only screen and (max-width:600px) {
+      .call-out-container{
+        width:100%;
+        }
+        .column-layout{
+          display:;
+        }
+}
+
+</style>
+  </head>
+ 
+  <body>
+   <div class="container">
+    <form action="">
+      <div class="form-row">
+        <label for="name">NAME:</label>
+        <input type="text" id="name">
+      </div>
+      <div class="form-row">
+        <label for="color">COLOR:</label>
+        <input type="text" id="favcolor">
+      </div>
+      </form>
+      <div class="column-layout">
+
+      <div id="side1">
+        <h1>side1 </h1>
+        <p>With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.</p>
+        </div>
+        <div id="side2">
+          <h2>side 2</h2>
+         <p> With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.</p>
+        </div>
+        <div id="main">
+          <h2>main side</h2>
+            <p>With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.
+              With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.
+              With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.
+              With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.
+</p>
+        </div>
+   </div>
+   <div class="call-out-container">
+    <div class="call-out">
+      <p>With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.</p>
+    </div>
+    <div class="call-out">
+      <p>With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.</p>
+    </div>
+    <div class="call-out">
+      <p>With reference to your application and subsequent interview held with us, we are pleased to offer you our Internship program (two months) in the Web Development (PHP) from 20th May to 30th July 2019. Further, you must be abiding by following terms and conditions during this period.</p>
+    </div>
+   </div>
+ </div>
+
+   </body>
+</html>
