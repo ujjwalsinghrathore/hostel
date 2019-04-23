@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
     <title>Narayan Residency</title>
      <style type="text/css">
         .red{
@@ -36,17 +38,18 @@
     	color:white;
     }
     #facilities{
-      background-image: url('k.jpeg');
+      background-color:white;
       height: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-color:;
+      margin-top:20px;
       
     }
      #rooms{
       background-image: url('h.jpeg');
-      height: 100%;
+      height: 500px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -57,11 +60,16 @@
       font-weight:bold;
       
     }
+    #corousel{
+
+    }
     #contact{
       background-color:black;
+      height:300px;
       margin-top:20px;
       text-align: center;
       color:white;
+      font-size:30px;
     }
   #nav {
   position: absolute;
@@ -110,15 +118,18 @@
   background-color:white;
   opacity:0.5;
   margin-top:20px;
+  height:450px;
+;
 }
 #alignment{
 	text-align: center;
 }
   img{
   margin-top:8px;
+  margin-bottom:30px;
 }
 .para{
-  font-size:28px;
+  font-size:35px;
 }
 
 
@@ -132,6 +143,22 @@
         background-position: center;
         background-repeat: repeat;
       }
+       .space{
+          margin-top:20px;
+        }
+        
+        .make{
+          width:100px;
+          height: 100px;
+          float:left;
+          margin-right:20px;
+
+        }
+        
+        h2{
+          text-align: center;
+        }
+        
       @media only screen and (max-width: 600px) {
       body{
         background-image: url('last.jpeg');
@@ -153,13 +180,31 @@
         .red{
       width:100%;
      }
+      #contact{
+        background-color:black;
+      height:100%;
+      margin-top:20px;
+      text-align: center;
+      color:white;
+      font-size:20px;
       }
+      .para{
+        font-size:20px;
+      }
+      #rooms{
+      background-image: url('h.jpeg');
+      height:100%;
+      margin-top:20px;
+      text-align:center;
+      font-weight:bold;
+      
+    }
 }
 
 </style>
   </head>
  
-  <body>
+  <body style="padding-top:">
     <!--nav begins -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
   <a class="navbar-brand" href="#" id="top">NARAYAN RESIDENCY</a>
@@ -169,29 +214,29 @@
   <div class="collapse navbar-collapse " class="" id="navbarNav"> 
     <ul class="navbar-nav "class="nav m-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="#home" style=";">HOME</a>
+        <a class="nav-link" href="" data-nav-section="" style=";">HOME</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="#about">ABOUT</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#rooms">ROOMS</a>
+      <li class="nav-item ">	
+        <a class="nav-link" href="#rooms" >ROOMS</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="#facilities">FACILITIES</a>
+        <a class="nav-link" href="#facilities" >FACILITIES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#directions">DIRECTIONS</a>
+        <a class="nav-link " href="#directions" >DIRECTIONS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#contact">CONTACT</a>
+        <a class="nav-link " href="#contact" >CONTACT</a>
       </li>
     </ul>
   </div>
 </nav>
 <!--nav ends-->
 <!--home begins-->
-<div id="content">
+<div id="content" data-offset="63">
   <div id="corousel" class="center">
     <div id="home">
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -222,15 +267,15 @@
 
 
     <!--about begins-->
-    <div id="about" class="center">
+    <div id="about" class="center" data-offset="63">
     <h1 class="">ABOUT</h1>
     <p class="para">
-    Constructed under the blessings of late Narayandas Ji Maharaj by two brothers  datarsingh shekhawat and Rajkumar sharma hosted by Uday Bhan Singh Shekhawat assistant food and beverage manager at Buena vista resorts jaipur .Providing youthe best  hospitality and comfort to make you fell like home within 500meters from Manipal University Jaipur.</p>
+    Constructed under the blessings of late Narayandas Ji Maharaj by two brothers  datarsingh shekhawat and Rajkumar sharma hosted by Uday Bhan Singh Shekhawat assistant food and beverage manager at Buena vista resorts jaipur .Providing you the best  hospitality and comfort to make you feel like home within 500meters from Manipal University Jaipur.</p>
     </div>
   <!--about ends-->
   <!--rooms start-->
-  <div id="rooms" class="center">
-    <p class="para">ROOMS</p>
+  <div id="rooms" class="center" data-offset="63" >
+    <h2 class="para">ROOMS</h2>
     <img src="room.jpeg" >
     <img src="k.jpeg">
     <img src="room1.jpeg">
@@ -239,8 +284,62 @@
 <!--rooms ends-->
 <!--facilities starts-->
 <div id="facilities" class="center">
-  <p class="para" id="alignment">FACILITIES</p>
-  <img src="net.png"" class="big">
+  <div class="container">
+    <h2>FACILITIES</h2>
+    <div class="row">
+    <div class="col-xl-6 col-md-6 col-sm-6">
+      <div class="space">
+       <img class="make" src="net.png"><p>FREE WIFI </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space" class="space"> 
+       <img class="make" src="pick.png"><p>PICK UP AND DROP </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="coller.png"><p>CHILLED WATER</p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="terrace.png"><p>TERRACE DINNING</p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="warm.jpeg"><p>WARM WATER </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="pool.png"><p>POOL TABEL </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="lunch.png"><p>FOOD  </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="ac.jpeg"><p>AC  </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="laundary.png"><p>FREE WIFI  </p>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12">
+      <div class="space">
+       <img class="make" src="kitchen.png"><p>24 X 7 OPEN  </p>
+      </div>
+    </div>
+   </div>
+    </div>
+   
 
   </div>
 <!--facilities ends-->
